@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="radioButtonStyle">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/home_btn_bg</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">2.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+ 
+    <style name="bookAppendText">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="commonButton">
+        <item name="android:width">@dimen/common_button_width</item>
+    </style>
+
+    <style name="commonAppendText">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="bookHeaderText">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+
+    <style name="newsHeaderText">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+
+    <style name="bold_text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+
+    <style name="loading_small" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@anim/loading</item>
+        <item name="android:layout_width">21dip</item>
+        <item name="android:layout_height">21dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="widget_listview">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:listSelector">@drawable/listview_item_selector</item>
+        <item name="android:divider">@drawable/listview_divider_line</item>
+        <item name="android:dividerHeight">1.0dip</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollingCache">false</item>
+    </style>
+
+    <style name="frame_button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/frame_button_bg</item>
+        <item name="android:textColor">@color/frame_button_text_light</item>
+    </style>
+
+    <style name="innerButton" />
+
+</resources>

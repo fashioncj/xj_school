@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "23.0.0"
+
+    defaultConfig {
+        applicationId "com.andybrier.lib"
+        minSdkVersion 8
+        targetSdkVersion 8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':tableFixHeaders')
+    compile project(':pullToRefresh')
+    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile files('libs/android-viewbadger.jar')
+    compile files('libs/asyncimage.jar')
+    compile files('libs/baidumapapi.jar')
+    compile files('libs/jsoup-1.6.3.jar')
+    compile files('libs/zxing.jar')
+
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar_new"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lib_search"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/name_book"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.36"
+            android:hint="@string/searchTips"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/button_get"
+            android:layout_gravity="center"
+             android:layout_width="70dp"  
+            android:layout_height="40dp"  
+            android:text="@string/search" />
+
+        <Button
+            android:id="@+id/button_scan"
+            android:layout_width="70dp"  
+            android:layout_height="40dp"  
+            android:layout_gravity="center"
+            android:text="@string/scan" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/bookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/lib_bookname" />
+
+        <RadioButton
+            android:id="@+id/bookAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lib_author" />
+
+        <RadioButton
+            android:id="@+id/isbn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lib_isbn" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:cursorVisible="false"
+        android:gravity="top" />
+
+</LinearLayout>

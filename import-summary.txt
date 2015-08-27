@@ -1,0 +1,233 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From Library:
+* .gitignore
+* README.md
+* proguard.cfg
+* xj_school.iml
+From PullToRefresh:
+* LICENSE
+* PullToRefresh.iml
+* pom.xml
+From TableFixHeaders:
+* .gitignore
+* TableFixHeaders.iml
+* build.gradle
+* build\
+* build\generated\
+* build\generated\source\
+* build\generated\source\buildConfig\
+* build\generated\source\buildConfig\androidTest\
+* build\generated\source\buildConfig\androidTest\debug\
+* build\generated\source\buildConfig\androidTest\debug\com\
+* build\generated\source\buildConfig\androidTest\debug\com\inqbarna\
+* build\generated\source\buildConfig\androidTest\debug\com\inqbarna\tablefixheaders\
+* build\generated\source\buildConfig\androidTest\debug\com\inqbarna\tablefixheaders\test\
+* build\generated\source\buildConfig\androidTest\debug\com\inqbarna\tablefixheaders\test\BuildConfig.java
+* build\generated\source\buildConfig\debug\
+* build\generated\source\buildConfig\debug\com\
+* build\generated\source\buildConfig\debug\com\inqbarna\
+* build\generated\source\buildConfig\debug\com\inqbarna\tablefixheaders\
+* build\generated\source\buildConfig\debug\com\inqbarna\tablefixheaders\BuildConfig.java
+* build\generated\source\r\
+* build\generated\source\r\androidTest\
+* build\generated\source\r\androidTest\debug\
+* build\generated\source\r\androidTest\debug\com\
+* build\generated\source\r\androidTest\debug\com\inqbarna\
+* build\generated\source\r\androidTest\debug\com\inqbarna\tablefixheaders\
+* build\generated\source\r\androidTest\debug\com\inqbarna\tablefixheaders\R.java
+* build\generated\source\r\androidTest\debug\com\inqbarna\tablefixheaders\test\
+* build\generated\source\r\androidTest\debug\com\inqbarna\tablefixheaders\test\R.java
+* build\generated\source\r\debug\
+* build\generated\source\r\debug\com\
+* build\generated\source\r\debug\com\inqbarna\
+* build\generated\source\r\debug\com\inqbarna\tablefixheaders\
+* build\generated\source\r\debug\com\inqbarna\tablefixheaders\R.java
+* build\intermediates\
+* build\intermediates\bundles\
+* build\intermediates\bundles\debug\
+* build\intermediates\bundles\debug\AndroidManifest.xml
+* build\intermediates\bundles\debug\R.txt
+* build\intermediates\bundles\debug\aapt\
+* build\intermediates\bundles\debug\aapt\AndroidManifest.xml
+* build\intermediates\bundles\debug\classes.jar
+* build\intermediates\bundles\debug\res\
+* build\intermediates\bundles\debug\res\drawable\
+* build\intermediates\bundles\debug\res\drawable\shadow_bottom.xml
+* build\intermediates\bundles\debug\res\drawable\shadow_left.xml
+* build\intermediates\bundles\debug\res\drawable\shadow_right.xml
+* build\intermediates\bundles\debug\res\drawable\shadow_top.xml
+* build\intermediates\bundles\debug\res\values\
+* build\intermediates\bundles\debug\res\values\values.xml
+* build\intermediates\classes\
+* build\intermediates\classes\androidTest\
+* build\intermediates\classes\androidTest\debug\
+* build\intermediates\classes\androidTest\debug\com\
+* build\intermediates\classes\androidTest\debug\com\inqbarna\
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\R$color.class
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\R$dimen.class
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\R$drawable.class
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\R$id.class
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\R.class
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\test\
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\test\BuildConfig.class
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\test\R$attr.class
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\test\R$color.class
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\test\R$dimen.class
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\test\R$drawable.class
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\test\R$id.class
+* build\intermediates\classes\androidTest\debug\com\inqbarna\tablefixheaders\test\R.class
+* build\intermediates\classes\debug\
+* build\intermediates\classes\debug\com\
+* build\intermediates\classes\debug\com\inqbarna\
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\BuildConfig.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\R$attr.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\R$color.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\R$dimen.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\R$drawable.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\R$id.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\R.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\Recycler.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\TableFixHeaders$1.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\TableFixHeaders$Flinger.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\TableFixHeaders$TableAdapterDataSetObserver.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\TableFixHeaders.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\adapters\
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\adapters\BaseTableAdapter.class
+* build\intermediates\classes\debug\com\inqbarna\tablefixheaders\adapters\TableAdapter.class
+* build\intermediates\incremental\
+* build\intermediates\incremental\aidl\
+* build\intermediates\incremental\aidl\androidTest\
+* build\intermediates\incremental\aidl\androidTest\debug\
+* build\intermediates\incremental\aidl\androidTest\debug\dependency.store
+* build\intermediates\incremental\aidl\debug\
+* build\intermediates\incremental\aidl\debug\dependency.store
+* build\intermediates\incremental\mergeAssets\
+* build\intermediates\incremental\mergeAssets\androidTest\
+* build\intermediates\incremental\mergeAssets\androidTest\debug\
+* build\intermediates\incremental\mergeAssets\androidTest\debug\merger.xml
+* build\intermediates\incremental\mergeAssets\debug\
+* build\intermediates\incremental\mergeAssets\debug\merger.xml
+* build\intermediates\incremental\mergeResourcesandroidTest\
+* build\intermediates\incremental\mergeResourcesandroidTest\debug\
+* build\intermediates\incremental\mergeResourcesandroidTest\debug\merger.xml
+* build\intermediates\incremental\packageResourcesdebug\
+* build\intermediates\incremental\packageResourcesdebug\merger.xml
+* build\intermediates\manifest\
+* build\intermediates\manifest\androidTest\
+* build\intermediates\manifest\androidTest\debug\
+* build\intermediates\manifest\androidTest\debug\AndroidManifest.xml
+* build\intermediates\manifest\tmp\
+* build\intermediates\manifest\tmp\manifestMerger1149157626510014185.xml
+* build\intermediates\manifest\tmp\manifestMerger8714662474922449166.xml
+* build\intermediates\res\
+* build\intermediates\res\merged\
+* build\intermediates\res\merged\androidTest\
+* build\intermediates\res\merged\androidTest\debug\
+* build\intermediates\res\merged\androidTest\debug\drawable\
+* build\intermediates\res\merged\androidTest\debug\drawable\shadow_bottom.xml
+* build\intermediates\res\merged\androidTest\debug\drawable\shadow_left.xml
+* build\intermediates\res\merged\androidTest\debug\drawable\shadow_right.xml
+* build\intermediates\res\merged\androidTest\debug\drawable\shadow_top.xml
+* build\intermediates\res\merged\androidTest\debug\values\
+* build\intermediates\res\merged\androidTest\debug\values\values.xml
+* build\intermediates\res\resources-debug-androidTest.ap_
+* build\intermediates\symbols\
+* build\intermediates\symbols\androidTest\
+* build\intermediates\symbols\androidTest\debug\
+* build\intermediates\symbols\androidTest\debug\R.txt
+* build\outputs\
+* build\outputs\aar\
+* build\outputs\aar\TableFixHeaders-debug.aar
+* build\tmp\
+* build\tmp\packageDebugJar\
+* build\tmp\packageDebugJar\MANIFEST.MF
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+actionbarsherlock =>
+    com.actionbarsherlock:actionbarsherlock:4.4.0@aar
+    com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In PullToRefresh:
+* AndroidManifest.xml => pullToRefresh\src\main\AndroidManifest.xml
+* assets\ => pullToRefresh\src\main\assets
+* res\ => pullToRefresh\src\main\res\
+* src\ => pullToRefresh\src\main\java\
+In TableFixHeaders:
+* AndroidManifest.xml => tableFixHeaders\src\main\AndroidManifest.xml
+* assets\ => tableFixHeaders\src\main\assets
+* res\ => tableFixHeaders\src\main\res\
+* src\ => tableFixHeaders\src\main\java\
+In Library:
+* AndroidManifest.xml => library\src\main\AndroidManifest.xml
+* libs\android-viewbadger.jar => library\libs\android-viewbadger.jar
+* libs\armeabi\libBMapApiEngine_v1_3_5.so => library\src\main\jniLibs\armeabi\libBMapApiEngine_v1_3_5.so
+* libs\armeabi\libvi_voslib.so => library\src\main\jniLibs\armeabi\libvi_voslib.so
+* libs\asyncimage.jar => library\libs\asyncimage.jar
+* libs\baidumapapi.jar => library\libs\baidumapapi.jar
+* libs\jsoup-1.6.3.jar => library\libs\jsoup-1.6.3.jar
+* libs\zxing.jar => library\libs\zxing.jar
+* lint.xml => library\lint.xml
+* res\ => library\src\main\res\
+* src\ => library\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

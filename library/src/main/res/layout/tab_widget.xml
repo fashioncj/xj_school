@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="5.0dip"
+    android:paddingRight="5.0dip" >
+
+    <TextView
+        android:id="@+id/tab_label"
+        style="@style/bookHeaderText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/selector_tab_book_detail"
+        android:gravity="center"
+        android:textColor="#ff000000" />
+
+</RelativeLayout>

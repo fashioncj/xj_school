@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="select_dialog_items">
+        <item>@string/renew_book</item>
+    </string-array>
+    <string-array name="select_dialog2_items">
+        <item>@string/del_book</item>
+    </string-array>
+    <string-array name="select_m_type">
+        <item>@string/m_type_inner</item>
+        <item>@string/m_type_outter</item>
+        <item>@string/m_type_manager</item>
+    </string-array>
+    <string-array name="select_m_time">
+        <item>@string/m_t_hour</item>
+    </string-array>
+    <string-array name="seach_type">
+        <item>@string/lib_bookname</item>
+        <item>@string/lib_author</item>
+        <item>@string/lib_isbn</item>
+    </string-array>
+
+</resources>

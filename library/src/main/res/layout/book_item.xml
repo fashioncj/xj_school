@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8.0dip" >
+
+   
+    <TextView  
+        android:id="@+id/title"
+        style="@style/bookHeaderText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/author"
+        style="@style/bookAppendText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/press"
+        style="@style/bookAppendText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/author"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/bookAppendText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/press"
+        android:singleLine="true" />
+    
+       <TextView
+        android:id="@+id/cate"
+        style="@style/bookAppendText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:singleLine="true" />
+
+</RelativeLayout>

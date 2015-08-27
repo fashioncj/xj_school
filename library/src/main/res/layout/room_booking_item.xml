@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/btn"
+        style="@style/innerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:focusable="false"
+        android:singleLine="true"
+        android:text="@string/cancel" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/bookHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+
+        <TextView
+            android:id="@+id/room"
+            style="@style/bookAppendText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+        
+        
+        <TextView
+            android:id="@+id/room_desc"  
+            style="@style/bookAppendText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+        <TextView
+            android:id="@+id/room_time"
+            style="@style/bookAppendText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

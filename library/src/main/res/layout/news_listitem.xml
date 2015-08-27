@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10.0dip" >
+
+    <com.iiseeuu.asyncimage.widget.AsyncImageView
+        android:id="@+id/async_image"
+        android:layout_width="@dimen/thumbnail_size"
+        android:layout_height="@dimen/thumbnail_size"
+        android:background="@drawable/default_news" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/news_listitem_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/listitem_black"
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/news_listitem_summer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:textColor="@color/listitem_gray"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/news_listitem_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:textColor="@color/listitem_gray"
+            android:textSize="@dimen/text_size_10" />
+    </LinearLayout>
+
+</LinearLayout>

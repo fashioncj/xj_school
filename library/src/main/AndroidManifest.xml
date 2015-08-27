@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andybrier.lib"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <!-- 添加屏幕及版本支持： -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <permission
+        android:name="com.andybrier.lib.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.andybrier.lib.permission.MAPS_RECEIVE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 使用网络功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- SDK离线地图和cache功能需要读写外部存储器 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 获取设置信息和详情页直接拨打电话需要以下权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+
+    <application
+        android:name="com.lib.LibraryApplication"
+        android:icon="@drawable/icon_21"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.lib.activity.SplashActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lib.activity.IndexActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.tabs.FragmentPageTabActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.InfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lib.activity.library.LibraryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lib.activity.map.LifeIndexActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 个人设置 -->
+        <activity
+            android:name="com.lib.activity.setting.SettingIndex"
+            android:screenOrientation="portrait" />
+
+        <!-- ***********************图书馆************************** -->
+
+
+        <!-- 查询 -->
+        <activity
+            android:name="com.lib.activity.library.LibSearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 当前借阅 -->
+        <activity
+            android:name="com.lib.activity.library.MyLendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 查看图书详细 -->
+        <activity
+            android:name="com.lib.activity.library.BookDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 查看图书详细信息之馆藏信息 -->
+        <activity
+            android:name="com.lib.activity.library.BookLocation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 个人信息:登录 -->
+        <activity
+            android:name="com.lib.activity.setting.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.library.ReLoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 预约信息 -->
+        <activity
+            android:name="com.lib.activity.library.BookPreReserveActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 预约管理 -->
+        <activity
+            android:name="com.lib.activity.library.BookPreInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.CaptureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.NORMAL" />
+
+                <category android:name="android.intent.category.SCAN" />
+            </intent-filter>
+        </activity>
+
+        <!-- 挂失 -->
+        <activity
+            android:name="com.lib.activity.library.LostCardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 读者推荐 -->
+        <activity
+            android:name="com.lib.activity.library.RecommondActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 我的借阅历史 -->
+        <activity
+            android:name="com.lib.activity.library.LendHistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- *********************************************  map *************************************************** -->
+
+        <activity
+            android:name="com.lib.activity.map.MyLocationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.map.RouteActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.map.PoiActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.map.PoiDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.map.PoiMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.map.PickSecendMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.map.SearchDialogActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.map.PickupMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- **************************我的资讯********************************************** -->
+        <activity
+            android:name="com.lib.activity.news.ShownewsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.news.ContactsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.news.NewsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.news.ShowHtml"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- **************************会议室********************************************** -->
+        <activity
+            android:name="com.lib.activity.room.BuildingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.room.RoomActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.room.MorningActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.room.AfternoonActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.room.NightActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.room.RoomBookActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.room.RoomSearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.library.LibinfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.library.AskActivity"
+            android:label="@string/title_activity_ask" >
+        </activity>
+        <activity android:name="com.lib.activity.library.EbscoActivity" >
+        </activity>
+        <activity android:name="com.lib.activity.news.NewsIndexActivity" >
+        </activity>
+        <activity android:name="com.lib.activity.NewLibActivity" >
+        </activity>
+        <activity android:name="com.lib.activity.NewLifeActivity" >
+        </activity>
+        <activity
+            android:name="com.lib.activity.ShowMapActivity"
+            android:label="@string/title_activity_show_map" >
+        </activity>
+    </application>
+
+</manifest>

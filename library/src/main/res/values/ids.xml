@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="main_radio">false</item>
+    <item type="id" name="radio_button0">false</item>
+    <item type="id" name="radio_button1">false</item>
+    <item type="id" name="radio_button2">false</item>
+    <item type="id" name="radio_button3">false</item>
+    <item type="id" name="radio_button4">false</item>
+    
+        
+        
+   <!-- 图书查询 radio button -->
+   <item type="id" name="text_lib_search">false</item>
+    <item type="id" name="radio_group_lib">false</item>
+    <item type="id" name="radio_lib_search_bookname">false</item>
+    <item type="id" name="radio_lib_search_author">false</item>
+    <item type="id" name="radio_lib_search_isbn">false</item>
+     <item type="id" name="btn_lib_search">false</item> 
+     
+  <!-- Messages IDs -->
+  <item type="id" name="auto_focus"/>
+  <item type="id" name="decode"/>
+  <item type="id" name="decode_failed"/>
+  <item type="id" name="decode_succeeded"/>
+  <item type="id" name="encode_failed"/>
+  <item type="id" name="encode_succeeded"/>
+  <item type="id" name="launch_product_query"/>
+  <item type="id" name="quit"/>
+  <item type="id" name="restart_preview"/>
+  <item type="id" name="return_scan_result"/>
+  <item type="id" name="search_book_contents_failed"/>
+  <item type="id" name="search_book_contents_succeeded"/>
+    
+    <item type="id" name="menu_id_search"/>
+      <item type="id" name="menu_id_scan"/>
+    
+    
+</resources>
