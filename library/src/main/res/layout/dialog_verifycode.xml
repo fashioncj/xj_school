@@ -6,11 +6,12 @@
     android:layout_margin="5dp">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:layout_height="fill_parent"
         android:src="@drawable/about_page_mor"
         android:id="@+id/imageView_code"
         android:layout_gravity="center"
+        android:scaleType="fitXY"
         android:layout_marginRight="5dp"/>
 
     <EditText
